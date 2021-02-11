@@ -9,7 +9,7 @@ fn main() {
     }
 }
 
-fn get_n() -> Result<u32, ParseIntError> {
+fn get_n() -> Result<u128, ParseIntError> {
     println!("What is your n today?");
 
     let mut user_n = String::new();
@@ -21,7 +21,7 @@ fn get_n() -> Result<u32, ParseIntError> {
     user_n.trim().parse()
 }
 
-fn fib(n: u32) -> u32 {
+fn fib(n: u128) -> u128 {
     match n {
         0 => 0,
         1 => 1,
