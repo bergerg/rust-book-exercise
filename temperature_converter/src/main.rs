@@ -24,7 +24,7 @@ fn main() {
                 1 => {
                     println!("Converting Celsius to Fahrenheit");
                     match get_temp_from_user() {
-                        Ok(temp) => println!("{} degrees Celsius are {} in Fahrenheit", temp, cel_to_fahr(temp)),
+                        Ok(temp) => println!("{:.2} degrees Celsius are {:.2} in Fahrenheit", temp, cel_to_fahr(temp)),
                         Err(_) => println!("invalid temperature!"),
                     }
                     break;
@@ -32,7 +32,7 @@ fn main() {
                 2 => {
                     println!("Converting Fahrenheit to Celsius");
                     match get_temp_from_user() {
-                        Ok(temp) => println!("{} degrees Fahrenheit are {} in Celsius", temp, fahr_to_cel(temp)),
+                        Ok(temp) => println!("{:.2} degrees Fahrenheit are {:.2} in Celsius", temp, fahr_to_cel(temp)),
                         Err(_) => println!("invalid temperature!"),
                     }
                     break;
