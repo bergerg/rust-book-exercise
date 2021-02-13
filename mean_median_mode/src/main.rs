@@ -1,7 +1,7 @@
 fn main() {
-    let vec1 = vec![5, 32, 1, 10, 18, 3];
-    assert_eq!(11.5, mean(&vec1), "failed assertion on mean value of vec1");
-    assert_eq!(10, median(&vec1), "failed assertion on median value of vec1")
+    let vec1 = vec![5, 32, 1, 10, 18, 3, 1];
+    assert_eq!(10.0, mean(&vec1), "failed assertion on mean value of vec1");
+    assert_eq!(5, median(&vec1), "failed assertion on median value of vec1")
 }
 
 fn mean(v: &[i32]) -> f32 {
