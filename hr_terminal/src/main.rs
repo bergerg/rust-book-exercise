@@ -3,6 +3,8 @@ use std::collections::HashMap;
 mod terminal;
 
 use crate::terminal::hr::{hr_term, TermialInput};
+use crate::terminal::department::Department;
+use crate::terminal::personal::Person;
 
 fn main() {
     println!("Welcome to Rust HR Terminal!");
